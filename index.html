@@ -68,8 +68,136 @@
     <main>
         <section id="portfolio">
             <!-- modal -->
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="./images/T4.jpg" alt="디자인" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal1">
+                        <h4 class="text-center mt-3">Design PJT ①</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="./images/T5.jpg" alt="디자인2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal2">
+                        <h4 class="text-center mt-3">Design PJT ②</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="./images/T6.jpg" alt="디자인3" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal3">
+                        <h4 class="text-center mt-3">Design PJT ③</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="./images/T7.jpg" alt="비디오1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal1">
+                        <h4 class="text-center mt-3">Video PJT ④</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="./images/T-1.jpg" alt="비디오2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal2">
+                        <h4 class="text-center mt-3">Video PJT ⑤</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="./images/T-2.jpg" alt="비디오3" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal3">
+                        <h4 class="text-center mt-3">Video PJT ⑥</h4>
+                    </div>
+                </div>
+            </div>
 
+        </section>
 
+        <section id="modal-section">
+            <div class="container">
+                <div class="modal" id="designModal1" tabindex="-1" aria-hidden="true"><!--여기서 모달 하나 시작-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Design PJT 1. 무릉도원</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <img src="./images/T4.jpg" class="img-fluid mb-3" alt="">
+                            <p>이미지에 대한 설명을 적으시옵소서......</p>
+                            <div class="modal-footer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="designModal2" tabindex="-1" aria-hidden="true"><!--디자인모달2-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Design PJT 2. 야생차밭</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"> <img src="./images/T5.jpg" class="img-fluid mb-3" alt=""></div>
+                            <div class="modal-footer"><p>이미지에 대한 설명을 적으시옵소서......</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="designModal3" tabindex="-1" aria-hidden="true"><!--디자인모달3-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Design PJT 3. 찻잎소녀</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <img src="./images/T4.jpg" class="img-fluid mb-3" alt="">
+                            <p>이미지에 대한 설명을 적으시옵소서......</p>
+                            <div class="modal-footer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="videoModal1" tabindex="-1" aria-hidden="true"><!--비디오모달1-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Video PJT Youtube 태하네</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                                <div class="ratio ratio-16x9"><!--가로세로 비율이 16:9입니다 라는 의미-->
+                                    <iframe src="https://www.youtube.com/embed/1x3Kf4vBxLI?mute=1&control=1&loop=1"  allowfullscreen></iframe><!--loof는 유튜브에서 자동으로 막힘. -->
+                                </div>
+                            <p>태하와 예린이의 하루!</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="videoModal2" tabindex="-1" aria-hidden="true"><!--비디오모달2-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Video PJT Youtube2. 다도시간</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/1jfWZkHjFag?autoplay=1&mute=1&control=1&loop=1"  allowfullscreen></iframe>
+                                </div> 
+
+                            <p>다도를 시작해 봅시다. </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="videoModal3" tabindex="-1" aria-hidden="true"><!--비디오모달3-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Design PJT 6. 찻잔</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                                <div class="ratio ratio-16x9">
+                                    <video src="./images/video/차3.mp4" controls muted loop autoplay></video>
+                                </div>
+
+                            <p>이 영상은 유튜브 링크 말고 mp4 파일로 넣은 것......</p>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </section>
     </main>
     <!-- main end -->
