@@ -24,6 +24,7 @@
   margin: auto;
 }
 
+
 .footer-a {
   text-decoration: none;
 }
@@ -69,7 +70,7 @@
 .timeline-item:nth-child(odd)::before {
   content: "";
   position: absolute;
-  border: 4px solid #62a172;
+  border: 4px solid #fdea12;
   border-radius: 50%;
   width: 16px;
   height: 16px;
@@ -82,7 +83,7 @@
 .timeline-item:nth-child(even)::before {
   content: "";
   position: absolute;
-  border: 4px solid #bcf496;
+  border: 4px solid #ff8000;
   border-radius: 50%;
   width: 16px;
   height: 16px;
@@ -92,3 +93,4 @@
   z-index: 1;
 }
 /* career section end */
+

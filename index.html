@@ -16,18 +16,19 @@
     <!-- 48*48로 기존 파비콘과 다르게 하나 더 만들어줘야함 애플용 -->
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="./css/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/app.css">
     <!-- 내가 만든 app.css를 더 하단에 두어야 내가 가져온 부트스트랩에서 수정할 부분이 적용됨.  -->
     <title>2025.06.12 을령이의 miniPJT</title>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- Header start -->
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-secondery bg-white border">
             <!-- navbar-expand-lg 이거를 확인해보면 화면크기가 커지면(윈도우사이즈) 햄버거버튼 안나온다 -->
             <div class="container">
                 <a href="#" class="navbar-brand logo-ballet-daeul fs-1 mt-3 me-5">
-                    <img src="./images/고양이1.jpg" class="rounded-pill me-5" style="width: 80px;" alt="">Eulryeong Kim</a>
+                    <img src="./images/Asset 2.png" class="rounded-pill me-5" style="width: 80px;" alt="">Eulryeong Kim</a>
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
                 <!-- aria-expanded:초기값을 펼쳐놓음으로 지정할것이냐 라는말에 false로 거절 -->
                     <span class="navbar-toggler-icon"></span>
@@ -235,19 +236,19 @@
                             </div>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quod possimus?</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                                <a href="./card1.html" target="-blank"><button class="btn btn-primary">Details</button></a>
+                                <a href="./card1.html" target="-blank"><button class="btn btn-warning">Details</button></a>
                             </div>
                         </div>
                     </div>
                     <div class="card col-sm-12 col-md-6 col-lg-3">
-                        <a href="./card1.html" target="_blank"><img src="./images/T-2.jpg" class="card-img-top mt-3" alt=""></a>
+                        <a href="./card2.html" target="_blank"><img src="./images/T-2.jpg" class="card-img-top mt-3" alt=""></a>
                         <div class="card-body">
                             <div class="card-title">
                                 TEA GOEUL 2.
                             </div>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quod possimus?</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                                <a href="./card1.html" target="-blank"><button class="btn btn-primary">Details</button></a>
+                                <a href="./card2.html" target="-blank"><button class="btn btn-warning">Details</button></a>
                             </div>
                         </div>
                     </div>
@@ -259,7 +260,7 @@
                             </div>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quod possimus?</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                                <a href="./card1.html" target="-blank"><button class="btn btn-primary">Details</button></a>
+                                <a href="./card1.html" target="-blank"><button class="btn btn-warning">Details</button></a>
                             </div>
                         </div>
                     </div>
@@ -271,7 +272,7 @@
                             </div>
                             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, quod possimus?</p>
                             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                                <a href="./card1.html" target="-blank"><button class="btn btn-primary">Details</button></a>
+                                <a href="./card1.html" target="-blank"><button class="btn btn-warning">Details</button></a>
                             </div>
                         </div>
                     </div>
@@ -279,48 +280,71 @@
                 </div>
             </div>
         </section>
+        <!-- Card end -->
 
 
-
-
-
-
-
-
-
+        <!-- Portfolio start -->
         <section id="portfolio">
             <!-- modal -->
             <div class="container mt-5">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                <h1 class="logo-love-daeul text-center mb-5" data-aos="fade-up">Design & Video Portfolio</h1>
+                <input type="text" id="searchInput" class="form-control" placeholder="검색어를 입력하세요...">
+                
+                <!-- 모달 분류 버튼 시작 -->
+                <div class="text-center">
+                    <button type="button" class="mt-5 mx-2 btn btn-secondary filter-btn" data-filter="all">전체</button>
+                    <button type="button" class="mt-5 mx-2 btn btn-warning filter-btn" data-filter="design">디자인</button>
+                    <button type="button" class="mt-5 mx-2 btn btn-warning filter-btn" data-filter="video">비디오</button>
+                    <button type="button" class="mt-5 mx-2 btn btn-warning filter-btn" data-filter="figma">피그마</button>
+                </div>
+
+
+                <!-- 포트폴리오 아이템 시작 -->
+                <div class="row mt-5">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="design" data-aos="fade-up">
                         <img src="./images/T4.jpg" alt="디자인" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal1">
-                        <h4 class="text-center mt-3">Design PJT ①</h4>
+                        <h4 class="text-center mt-3">Design PJT 1</h4>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="design" >
                         <img src="./images/T5.jpg" alt="디자인2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal2">
-                        <h4 class="text-center mt-3">Design PJT ②</h4>
+                        <h4 class="text-center mt-3">Design PJT 2</h4>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
-                        <img src="./images/T6.jpg" alt="디자인3" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal3">
-                        <h4 class="text-center mt-3">Design PJT ③</h4>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="figma" >
+                        <img src="./images/Asset 1.png" alt="피그마1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#figmaModal1">
+                        <h4 class="text-center mt-3">Figma PJT 1</h4>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="figma" >
+                        <img src="./images/Asset 2.png" alt="피그마2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#figmaModal2">
+                        <h4 class="text-center mt-3">Figma PJT 2</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video" >
                         <img src="./images/T7.jpg" alt="비디오1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal1">
-                        <h4 class="text-center mt-3">Video PJT ④</h4>
+                        <h4 class="text-center mt-3">Video PJT 1</h4>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video" >
                         <img src="./images/T-1.jpg" alt="비디오2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal2">
-                        <h4 class="text-center mt-3">Video PJT ⑤</h4>
+                        <h4 class="text-center mt-3">Video PJT 2</h4>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video">
                         <img src="./images/T-2.jpg" alt="비디오3" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal3">
-                        <h4 class="text-center mt-3">Video PJT ⑥</h4>
+                        <h4 class="text-center mt-3">Video PJT 3</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video" >
+                        <img src="./images/T-3.jpg" alt="비디오4" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal4">
+                        <h4 class="text-center mt-3">Video PJT 4</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video" >
+                        <img src="./images/T6.jpg" alt="비디오5" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal5">
+                        <h4 class="text-center mt-3">Video PJT 5</h4>
                     </div>
                 </div>
             </div>
 
         </section>
+        <!-- Portfolio end -->
 
+
+        <!-- modal start -->
         <section id="modal-section">
             <div class="container">
                 <div class="modal" id="designModal1" tabindex="-1" aria-hidden="true"><!--여기서 모달 하나 시작-->
@@ -351,15 +375,30 @@
                     </div>
                 </div>
 
-                <div class="modal" id="designModal3" tabindex="-1" aria-hidden="true"><!--디자인모달3-->
+                <div class="modal" id="figmaModal1" tabindex="-1" aria-hidden="true"><!--피그마모달1-->
                     <div class="modal-dialog modal-dialog-centered">
                         <div  class="modal-content">
                             <div class="modal-header">
-                                <h5>Design PJT 3. 찻잎 할머니</h5>
+                                <h5>Figma PJT 1. 티고을 로고</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body"></div>
-                            <img src="./images/T6.jpg" class="img-fluid mb-3" alt="">
+                            <img src="./images/Asset 1.png" class="img-fluid mb-3" alt="">
+                            <p>이미지에 대한 설명을 적으시옵소서......</p>
+                            <div class="modal-footer"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="figmaModal2" tabindex="-1" aria-hidden="true"><!--피그마모달2-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Figma PJT 2. 티고을 로고2</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <img src="./images/Asset 2.png" class="img-fluid mb-3" alt="">
                             <p>이미지에 대한 설명을 적으시옵소서......</p>
                             <div class="modal-footer"></div>
                         </div>
@@ -418,14 +457,53 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="modal fade" id="videoModal4" tabindex="-1" aria-hidden="true"><!--비디오모달4-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Video PJT Youtube2. 다도시간</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                                <div class="ratio ratio-16x9">
+                                    <video src="./images/video/차2.mp4" controls muted loop autoplay></video>
+                                </div> 
+
+                            <p>다도를 시작해 봅시다. </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="videoModal5" tabindex="-1" aria-hidden="true"><!--비디오모달5-->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div  class="modal-content">
+                            <div class="modal-header">
+                                <h5>Design PJT 6. 찻잔</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                                <div class="ratio ratio-16x9">
+                                    <video src="./images/video/차1.mp4" controls muted loop autoplay></video>
+                                </div>
+
+                            <p>차를 한잔 마셔봅시다. </p>
+
+                        </div>
+                    </div>
+                </div>
                 
             </div>
         </section>
+        <!-- modal end -->
+
+
     </main>
     <!-- main end -->
 
     <!-- Footer start -->
-    <footer class="footer mt-auto py-3 bg-dark">
+    <footer class="footer mt-auto py-3 bg-secondary mt-auto">
         <div class="container">
             <div class="text-center">
                 <a href="#" class="footer-a text-white">@Copyleft 2025 고귀한 을령이</a> <!--저작권 없어요 아무나 다 쓰세요-->
@@ -435,6 +513,7 @@
     </footer>
      <!-- Footer end -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/app.js"></script>
 </body>
 </html>
